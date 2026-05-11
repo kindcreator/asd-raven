@@ -1,0 +1,13 @@
+# Agent session work — kept locally only, never published with the public repo.
+# See: spec'd in topic-init-of-asd-raven-repo/2026-05-11--raven-lang-genesis-and-scope/
+.agent-sessions/
+
+# macOS noise
+.DS_Store
+
+# Editor / OS noise
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
