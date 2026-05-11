@@ -1,6 +1,11 @@
 # What is `asd-raven`? 
 asd-raven is a new POC concept
 
+## Overview
+
+raven-lang is an authoring layer for agent protocols. The author writes modular source files with deterministic conditional references over observable state; a compiler/runtime resolves the branches *before* the agent sees the prompt and emits a clean, branch-free instruction. Outputs target existing conventions (`SKILL.md`, baked system prompt) — no new runtime semantics for the LLM. The win is killing the skill-authoring maintenance loop and pushing conditionals out of prose into deterministic code.
+
+
 # Why this repository exists 
 In daily programmign live the writing code is obsolete. 
 Agents replaced the coders. But agents still cannot replace high lvl tech leaders and architects. 
