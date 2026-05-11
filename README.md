@@ -1,6 +1,9 @@
 # What is `asd-raven`? 
 asd-raven is a new POC concept
 
+My goal is UX with minimal learning curve. Not a new convention for working with LLMs in a fundamental way — a richer, maintainable way to author agent prompts. "SWE is no longer about writing code, it's about high-level cross-topic knowledge and managing agents."
+
+
 ## Overview
 
 raven-lang is an authoring layer for agent protocols. The author writes modular source files with deterministic conditional references over observable state; a compiler/runtime resolves the branches *before* the agent sees the prompt and emits a clean, branch-free instruction. Outputs target existing conventions (`SKILL.md`, baked system prompt) — no new runtime semantics for the LLM. The win is killing the skill-authoring maintenance loop and pushing conditionals out of prose into deterministic code.
@@ -55,6 +58,9 @@ LLMs are doiing bad with IF / ELSE.
 Once again - you want to use your own module to detect intentions / build the prompt / scope the context 
 
 this all would be abstracted to reasonable functions which you gonna override and the entire system suppose to do magic for you 
+
+5.) LLMs are bad at conditionals — moving them to deterministic code is a reliability + token-budget win
+
 
 # Assumptions I am following 
 I am treating agents as intelegent humans at this point. 
